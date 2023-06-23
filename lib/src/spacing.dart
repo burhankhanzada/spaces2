@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import 'package:spaces/src/spacing_data.dart';
+import 'package:spaces2/src/spacing_data.dart';
 
 typedef DataBuilder<T> = T Function(BuildContext context);
 
