@@ -1,5 +1,7 @@
+// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'spacing_data.dart';
 
@@ -10,23 +12,7 @@ part of 'spacing_data.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$SpacingDataTearOff {
-  const _$SpacingDataTearOff();
-
-  _SpacingData call(
-      {required SpacingInsetsData insets, required SizeSet<double> spaces}) {
-    return _SpacingData(
-      insets: insets,
-      spaces: spaces,
-    );
-  }
-}
-
-/// @nodoc
-const $SpacingData = _$SpacingDataTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$SpacingData {
@@ -42,7 +28,8 @@ mixin _$SpacingData {
 abstract class $SpacingDataCopyWith<$Res> {
   factory $SpacingDataCopyWith(
           SpacingData value, $Res Function(SpacingData) then) =
-      _$SpacingDataCopyWithImpl<$Res>;
+      _$SpacingDataCopyWithImpl<$Res, SpacingData>;
+  @useResult
   $Res call({SpacingInsetsData insets, SizeSet<double> spaces});
 
   $SpacingInsetsDataCopyWith<$Res> get insets;
@@ -50,46 +37,58 @@ abstract class $SpacingDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SpacingDataCopyWithImpl<$Res> implements $SpacingDataCopyWith<$Res> {
+class _$SpacingDataCopyWithImpl<$Res, $Val extends SpacingData>
+    implements $SpacingDataCopyWith<$Res> {
   _$SpacingDataCopyWithImpl(this._value, this._then);
 
-  final SpacingData _value;
   // ignore: unused_field
-  final $Res Function(SpacingData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? insets = freezed,
-    Object? spaces = freezed,
+    Object? insets = null,
+    Object? spaces = null,
   }) {
     return _then(_value.copyWith(
-      insets: insets == freezed ? _value.insets : insets as SpacingInsetsData,
-      spaces: spaces == freezed ? _value.spaces : spaces as SizeSet<double>,
-    ));
+      insets: null == insets
+          ? _value.insets
+          : insets // ignore: cast_nullable_to_non_nullable
+              as SpacingInsetsData,
+      spaces: null == spaces
+          ? _value.spaces
+          : spaces // ignore: cast_nullable_to_non_nullable
+              as SizeSet<double>,
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SpacingInsetsDataCopyWith<$Res> get insets {
     return $SpacingInsetsDataCopyWith<$Res>(_value.insets, (value) {
-      return _then(_value.copyWith(insets: value));
+      return _then(_value.copyWith(insets: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<double, $Res> get spaces {
     return $SizeSetCopyWith<double, $Res>(_value.spaces, (value) {
-      return _then(_value.copyWith(spaces: value));
+      return _then(_value.copyWith(spaces: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$SpacingDataCopyWith<$Res>
+abstract class _$$_SpacingDataCopyWith<$Res>
     implements $SpacingDataCopyWith<$Res> {
-  factory _$SpacingDataCopyWith(
-          _SpacingData value, $Res Function(_SpacingData) then) =
-      __$SpacingDataCopyWithImpl<$Res>;
+  factory _$$_SpacingDataCopyWith(
+          _$_SpacingData value, $Res Function(_$_SpacingData) then) =
+      __$$_SpacingDataCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({SpacingInsetsData insets, SizeSet<double> spaces});
 
   @override
@@ -99,28 +98,34 @@ abstract class _$SpacingDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$SpacingDataCopyWithImpl<$Res> extends _$SpacingDataCopyWithImpl<$Res>
-    implements _$SpacingDataCopyWith<$Res> {
-  __$SpacingDataCopyWithImpl(
-      _SpacingData _value, $Res Function(_SpacingData) _then)
-      : super(_value, (v) => _then(v as _SpacingData));
+class __$$_SpacingDataCopyWithImpl<$Res>
+    extends _$SpacingDataCopyWithImpl<$Res, _$_SpacingData>
+    implements _$$_SpacingDataCopyWith<$Res> {
+  __$$_SpacingDataCopyWithImpl(
+      _$_SpacingData _value, $Res Function(_$_SpacingData) _then)
+      : super(_value, _then);
 
-  @override
-  _SpacingData get _value => super._value as _SpacingData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? insets = freezed,
-    Object? spaces = freezed,
+    Object? insets = null,
+    Object? spaces = null,
   }) {
-    return _then(_SpacingData(
-      insets: insets == freezed ? _value.insets : insets as SpacingInsetsData,
-      spaces: spaces == freezed ? _value.spaces : spaces as SizeSet<double>,
+    return _then(_$_SpacingData(
+      insets: null == insets
+          ? _value.insets
+          : insets // ignore: cast_nullable_to_non_nullable
+              as SpacingInsetsData,
+      spaces: null == spaces
+          ? _value.spaces
+          : spaces // ignore: cast_nullable_to_non_nullable
+              as SizeSet<double>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_SpacingData implements _SpacingData {
   const _$_SpacingData({required this.insets, required this.spaces});
 
@@ -137,74 +142,36 @@ class _$_SpacingData implements _SpacingData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SpacingData &&
-            (identical(other.insets, insets) ||
-                const DeepCollectionEquality().equals(other.insets, insets)) &&
-            (identical(other.spaces, spaces) ||
-                const DeepCollectionEquality().equals(other.spaces, spaces)));
+        (other.runtimeType == runtimeType &&
+            other is _$_SpacingData &&
+            (identical(other.insets, insets) || other.insets == insets) &&
+            (identical(other.spaces, spaces) || other.spaces == spaces));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(insets) ^
-      const DeepCollectionEquality().hash(spaces);
+  int get hashCode => Object.hash(runtimeType, insets, spaces);
 
   @JsonKey(ignore: true)
   @override
-  _$SpacingDataCopyWith<_SpacingData> get copyWith =>
-      __$SpacingDataCopyWithImpl<_SpacingData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_SpacingDataCopyWith<_$_SpacingData> get copyWith =>
+      __$$_SpacingDataCopyWithImpl<_$_SpacingData>(this, _$identity);
 }
 
 abstract class _SpacingData implements SpacingData {
   const factory _SpacingData(
-      {required SpacingInsetsData insets,
-      required SizeSet<double> spaces}) = _$_SpacingData;
+      {required final SpacingInsetsData insets,
+      required final SizeSet<double> spaces}) = _$_SpacingData;
 
   @override
-  SpacingInsetsData get insets => throw _privateConstructorUsedError;
+  SpacingInsetsData get insets;
   @override
-  SizeSet<double> get spaces => throw _privateConstructorUsedError;
+  SizeSet<double> get spaces;
   @override
   @JsonKey(ignore: true)
-  _$SpacingDataCopyWith<_SpacingData> get copyWith =>
+  _$$_SpacingDataCopyWith<_$_SpacingData> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$SpacingInsetsDataTearOff {
-  const _$SpacingInsetsDataTearOff();
-
-  _SpacingInsetsData call(
-      {required SizeSet<EdgeInsets> all,
-      required SizeSet<EdgeInsets> horizontal,
-      required SizeSet<EdgeInsets> vertical,
-      required SizeSet<EdgeInsets> onlyRight,
-      required SizeSet<EdgeInsets> onlyTop,
-      required SizeSet<EdgeInsets> onlyBottom,
-      required SizeSet<EdgeInsets> onlyLeft,
-      required SizeSet<EdgeInsets> exceptLeft,
-      required SizeSet<EdgeInsets> exceptRight,
-      required SizeSet<EdgeInsets> exceptTop,
-      required SizeSet<EdgeInsets> exceptBottom}) {
-    return _SpacingInsetsData(
-      all: all,
-      horizontal: horizontal,
-      vertical: vertical,
-      onlyRight: onlyRight,
-      onlyTop: onlyTop,
-      onlyBottom: onlyBottom,
-      onlyLeft: onlyLeft,
-      exceptLeft: exceptLeft,
-      exceptRight: exceptRight,
-      exceptTop: exceptTop,
-      exceptBottom: exceptBottom,
-    );
-  }
-}
-
-/// @nodoc
-const $SpacingInsetsData = _$SpacingInsetsDataTearOff();
 
 /// @nodoc
 mixin _$SpacingInsetsData {
@@ -229,7 +196,8 @@ mixin _$SpacingInsetsData {
 abstract class $SpacingInsetsDataCopyWith<$Res> {
   factory $SpacingInsetsDataCopyWith(
           SpacingInsetsData value, $Res Function(SpacingInsetsData) then) =
-      _$SpacingInsetsDataCopyWithImpl<$Res>;
+      _$SpacingInsetsDataCopyWithImpl<$Res, SpacingInsetsData>;
+  @useResult
   $Res call(
       {SizeSet<EdgeInsets> all,
       SizeSet<EdgeInsets> horizontal,
@@ -257,147 +225,175 @@ abstract class $SpacingInsetsDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SpacingInsetsDataCopyWithImpl<$Res>
+class _$SpacingInsetsDataCopyWithImpl<$Res, $Val extends SpacingInsetsData>
     implements $SpacingInsetsDataCopyWith<$Res> {
   _$SpacingInsetsDataCopyWithImpl(this._value, this._then);
 
-  final SpacingInsetsData _value;
   // ignore: unused_field
-  final $Res Function(SpacingInsetsData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? all = freezed,
-    Object? horizontal = freezed,
-    Object? vertical = freezed,
-    Object? onlyRight = freezed,
-    Object? onlyTop = freezed,
-    Object? onlyBottom = freezed,
-    Object? onlyLeft = freezed,
-    Object? exceptLeft = freezed,
-    Object? exceptRight = freezed,
-    Object? exceptTop = freezed,
-    Object? exceptBottom = freezed,
+    Object? all = null,
+    Object? horizontal = null,
+    Object? vertical = null,
+    Object? onlyRight = null,
+    Object? onlyTop = null,
+    Object? onlyBottom = null,
+    Object? onlyLeft = null,
+    Object? exceptLeft = null,
+    Object? exceptRight = null,
+    Object? exceptTop = null,
+    Object? exceptBottom = null,
   }) {
     return _then(_value.copyWith(
-      all: all == freezed ? _value.all : all as SizeSet<EdgeInsets>,
-      horizontal: horizontal == freezed
+      all: null == all
+          ? _value.all
+          : all // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      horizontal: null == horizontal
           ? _value.horizontal
-          : horizontal as SizeSet<EdgeInsets>,
-      vertical: vertical == freezed
+          : horizontal // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      vertical: null == vertical
           ? _value.vertical
-          : vertical as SizeSet<EdgeInsets>,
-      onlyRight: onlyRight == freezed
+          : vertical // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyRight: null == onlyRight
           ? _value.onlyRight
-          : onlyRight as SizeSet<EdgeInsets>,
-      onlyTop:
-          onlyTop == freezed ? _value.onlyTop : onlyTop as SizeSet<EdgeInsets>,
-      onlyBottom: onlyBottom == freezed
+          : onlyRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyTop: null == onlyTop
+          ? _value.onlyTop
+          : onlyTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyBottom: null == onlyBottom
           ? _value.onlyBottom
-          : onlyBottom as SizeSet<EdgeInsets>,
-      onlyLeft: onlyLeft == freezed
+          : onlyBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyLeft: null == onlyLeft
           ? _value.onlyLeft
-          : onlyLeft as SizeSet<EdgeInsets>,
-      exceptLeft: exceptLeft == freezed
+          : onlyLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptLeft: null == exceptLeft
           ? _value.exceptLeft
-          : exceptLeft as SizeSet<EdgeInsets>,
-      exceptRight: exceptRight == freezed
+          : exceptLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptRight: null == exceptRight
           ? _value.exceptRight
-          : exceptRight as SizeSet<EdgeInsets>,
-      exceptTop: exceptTop == freezed
+          : exceptRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptTop: null == exceptTop
           ? _value.exceptTop
-          : exceptTop as SizeSet<EdgeInsets>,
-      exceptBottom: exceptBottom == freezed
+          : exceptTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptBottom: null == exceptBottom
           ? _value.exceptBottom
-          : exceptBottom as SizeSet<EdgeInsets>,
-    ));
+          : exceptBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get all {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.all, (value) {
-      return _then(_value.copyWith(all: value));
+      return _then(_value.copyWith(all: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get horizontal {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.horizontal, (value) {
-      return _then(_value.copyWith(horizontal: value));
+      return _then(_value.copyWith(horizontal: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get vertical {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.vertical, (value) {
-      return _then(_value.copyWith(vertical: value));
+      return _then(_value.copyWith(vertical: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get onlyRight {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.onlyRight, (value) {
-      return _then(_value.copyWith(onlyRight: value));
+      return _then(_value.copyWith(onlyRight: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get onlyTop {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.onlyTop, (value) {
-      return _then(_value.copyWith(onlyTop: value));
+      return _then(_value.copyWith(onlyTop: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get onlyBottom {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.onlyBottom, (value) {
-      return _then(_value.copyWith(onlyBottom: value));
+      return _then(_value.copyWith(onlyBottom: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get onlyLeft {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.onlyLeft, (value) {
-      return _then(_value.copyWith(onlyLeft: value));
+      return _then(_value.copyWith(onlyLeft: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get exceptLeft {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.exceptLeft, (value) {
-      return _then(_value.copyWith(exceptLeft: value));
+      return _then(_value.copyWith(exceptLeft: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get exceptRight {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.exceptRight, (value) {
-      return _then(_value.copyWith(exceptRight: value));
+      return _then(_value.copyWith(exceptRight: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get exceptTop {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.exceptTop, (value) {
-      return _then(_value.copyWith(exceptTop: value));
+      return _then(_value.copyWith(exceptTop: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $SizeSetCopyWith<EdgeInsets, $Res> get exceptBottom {
     return $SizeSetCopyWith<EdgeInsets, $Res>(_value.exceptBottom, (value) {
-      return _then(_value.copyWith(exceptBottom: value));
+      return _then(_value.copyWith(exceptBottom: value) as $Val);
     });
   }
 }
 
 /// @nodoc
-abstract class _$SpacingInsetsDataCopyWith<$Res>
+abstract class _$$_SpacingInsetsDataCopyWith<$Res>
     implements $SpacingInsetsDataCopyWith<$Res> {
-  factory _$SpacingInsetsDataCopyWith(
-          _SpacingInsetsData value, $Res Function(_SpacingInsetsData) then) =
-      __$SpacingInsetsDataCopyWithImpl<$Res>;
+  factory _$$_SpacingInsetsDataCopyWith(_$_SpacingInsetsData value,
+          $Res Function(_$_SpacingInsetsData) then) =
+      __$$_SpacingInsetsDataCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {SizeSet<EdgeInsets> all,
       SizeSet<EdgeInsets> horizontal,
@@ -436,66 +432,79 @@ abstract class _$SpacingInsetsDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$SpacingInsetsDataCopyWithImpl<$Res>
-    extends _$SpacingInsetsDataCopyWithImpl<$Res>
-    implements _$SpacingInsetsDataCopyWith<$Res> {
-  __$SpacingInsetsDataCopyWithImpl(
-      _SpacingInsetsData _value, $Res Function(_SpacingInsetsData) _then)
-      : super(_value, (v) => _then(v as _SpacingInsetsData));
+class __$$_SpacingInsetsDataCopyWithImpl<$Res>
+    extends _$SpacingInsetsDataCopyWithImpl<$Res, _$_SpacingInsetsData>
+    implements _$$_SpacingInsetsDataCopyWith<$Res> {
+  __$$_SpacingInsetsDataCopyWithImpl(
+      _$_SpacingInsetsData _value, $Res Function(_$_SpacingInsetsData) _then)
+      : super(_value, _then);
 
-  @override
-  _SpacingInsetsData get _value => super._value as _SpacingInsetsData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? all = freezed,
-    Object? horizontal = freezed,
-    Object? vertical = freezed,
-    Object? onlyRight = freezed,
-    Object? onlyTop = freezed,
-    Object? onlyBottom = freezed,
-    Object? onlyLeft = freezed,
-    Object? exceptLeft = freezed,
-    Object? exceptRight = freezed,
-    Object? exceptTop = freezed,
-    Object? exceptBottom = freezed,
+    Object? all = null,
+    Object? horizontal = null,
+    Object? vertical = null,
+    Object? onlyRight = null,
+    Object? onlyTop = null,
+    Object? onlyBottom = null,
+    Object? onlyLeft = null,
+    Object? exceptLeft = null,
+    Object? exceptRight = null,
+    Object? exceptTop = null,
+    Object? exceptBottom = null,
   }) {
-    return _then(_SpacingInsetsData(
-      all: all == freezed ? _value.all : all as SizeSet<EdgeInsets>,
-      horizontal: horizontal == freezed
+    return _then(_$_SpacingInsetsData(
+      all: null == all
+          ? _value.all
+          : all // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      horizontal: null == horizontal
           ? _value.horizontal
-          : horizontal as SizeSet<EdgeInsets>,
-      vertical: vertical == freezed
+          : horizontal // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      vertical: null == vertical
           ? _value.vertical
-          : vertical as SizeSet<EdgeInsets>,
-      onlyRight: onlyRight == freezed
+          : vertical // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyRight: null == onlyRight
           ? _value.onlyRight
-          : onlyRight as SizeSet<EdgeInsets>,
-      onlyTop:
-          onlyTop == freezed ? _value.onlyTop : onlyTop as SizeSet<EdgeInsets>,
-      onlyBottom: onlyBottom == freezed
+          : onlyRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyTop: null == onlyTop
+          ? _value.onlyTop
+          : onlyTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyBottom: null == onlyBottom
           ? _value.onlyBottom
-          : onlyBottom as SizeSet<EdgeInsets>,
-      onlyLeft: onlyLeft == freezed
+          : onlyBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      onlyLeft: null == onlyLeft
           ? _value.onlyLeft
-          : onlyLeft as SizeSet<EdgeInsets>,
-      exceptLeft: exceptLeft == freezed
+          : onlyLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptLeft: null == exceptLeft
           ? _value.exceptLeft
-          : exceptLeft as SizeSet<EdgeInsets>,
-      exceptRight: exceptRight == freezed
+          : exceptLeft // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptRight: null == exceptRight
           ? _value.exceptRight
-          : exceptRight as SizeSet<EdgeInsets>,
-      exceptTop: exceptTop == freezed
+          : exceptRight // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptTop: null == exceptTop
           ? _value.exceptTop
-          : exceptTop as SizeSet<EdgeInsets>,
-      exceptBottom: exceptBottom == freezed
+          : exceptTop // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
+      exceptBottom: null == exceptBottom
           ? _value.exceptBottom
-          : exceptBottom as SizeSet<EdgeInsets>,
+          : exceptBottom // ignore: cast_nullable_to_non_nullable
+              as SizeSet<EdgeInsets>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_SpacingInsetsData implements _SpacingInsetsData {
   const _$_SpacingInsetsData(
       {required this.all,
@@ -541,130 +550,94 @@ class _$_SpacingInsetsData implements _SpacingInsetsData {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SpacingInsetsData &&
-            (identical(other.all, all) ||
-                const DeepCollectionEquality().equals(other.all, all)) &&
+        (other.runtimeType == runtimeType &&
+            other is _$_SpacingInsetsData &&
+            (identical(other.all, all) || other.all == all) &&
             (identical(other.horizontal, horizontal) ||
-                const DeepCollectionEquality()
-                    .equals(other.horizontal, horizontal)) &&
+                other.horizontal == horizontal) &&
             (identical(other.vertical, vertical) ||
-                const DeepCollectionEquality()
-                    .equals(other.vertical, vertical)) &&
+                other.vertical == vertical) &&
             (identical(other.onlyRight, onlyRight) ||
-                const DeepCollectionEquality()
-                    .equals(other.onlyRight, onlyRight)) &&
-            (identical(other.onlyTop, onlyTop) ||
-                const DeepCollectionEquality()
-                    .equals(other.onlyTop, onlyTop)) &&
+                other.onlyRight == onlyRight) &&
+            (identical(other.onlyTop, onlyTop) || other.onlyTop == onlyTop) &&
             (identical(other.onlyBottom, onlyBottom) ||
-                const DeepCollectionEquality()
-                    .equals(other.onlyBottom, onlyBottom)) &&
+                other.onlyBottom == onlyBottom) &&
             (identical(other.onlyLeft, onlyLeft) ||
-                const DeepCollectionEquality()
-                    .equals(other.onlyLeft, onlyLeft)) &&
+                other.onlyLeft == onlyLeft) &&
             (identical(other.exceptLeft, exceptLeft) ||
-                const DeepCollectionEquality()
-                    .equals(other.exceptLeft, exceptLeft)) &&
+                other.exceptLeft == exceptLeft) &&
             (identical(other.exceptRight, exceptRight) ||
-                const DeepCollectionEquality()
-                    .equals(other.exceptRight, exceptRight)) &&
+                other.exceptRight == exceptRight) &&
             (identical(other.exceptTop, exceptTop) ||
-                const DeepCollectionEquality()
-                    .equals(other.exceptTop, exceptTop)) &&
+                other.exceptTop == exceptTop) &&
             (identical(other.exceptBottom, exceptBottom) ||
-                const DeepCollectionEquality()
-                    .equals(other.exceptBottom, exceptBottom)));
+                other.exceptBottom == exceptBottom));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(all) ^
-      const DeepCollectionEquality().hash(horizontal) ^
-      const DeepCollectionEquality().hash(vertical) ^
-      const DeepCollectionEquality().hash(onlyRight) ^
-      const DeepCollectionEquality().hash(onlyTop) ^
-      const DeepCollectionEquality().hash(onlyBottom) ^
-      const DeepCollectionEquality().hash(onlyLeft) ^
-      const DeepCollectionEquality().hash(exceptLeft) ^
-      const DeepCollectionEquality().hash(exceptRight) ^
-      const DeepCollectionEquality().hash(exceptTop) ^
-      const DeepCollectionEquality().hash(exceptBottom);
+  int get hashCode => Object.hash(
+      runtimeType,
+      all,
+      horizontal,
+      vertical,
+      onlyRight,
+      onlyTop,
+      onlyBottom,
+      onlyLeft,
+      exceptLeft,
+      exceptRight,
+      exceptTop,
+      exceptBottom);
 
   @JsonKey(ignore: true)
   @override
-  _$SpacingInsetsDataCopyWith<_SpacingInsetsData> get copyWith =>
-      __$SpacingInsetsDataCopyWithImpl<_SpacingInsetsData>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_SpacingInsetsDataCopyWith<_$_SpacingInsetsData> get copyWith =>
+      __$$_SpacingInsetsDataCopyWithImpl<_$_SpacingInsetsData>(
+          this, _$identity);
 }
 
 abstract class _SpacingInsetsData implements SpacingInsetsData {
   const factory _SpacingInsetsData(
-      {required SizeSet<EdgeInsets> all,
-      required SizeSet<EdgeInsets> horizontal,
-      required SizeSet<EdgeInsets> vertical,
-      required SizeSet<EdgeInsets> onlyRight,
-      required SizeSet<EdgeInsets> onlyTop,
-      required SizeSet<EdgeInsets> onlyBottom,
-      required SizeSet<EdgeInsets> onlyLeft,
-      required SizeSet<EdgeInsets> exceptLeft,
-      required SizeSet<EdgeInsets> exceptRight,
-      required SizeSet<EdgeInsets> exceptTop,
-      required SizeSet<EdgeInsets> exceptBottom}) = _$_SpacingInsetsData;
+      {required final SizeSet<EdgeInsets> all,
+      required final SizeSet<EdgeInsets> horizontal,
+      required final SizeSet<EdgeInsets> vertical,
+      required final SizeSet<EdgeInsets> onlyRight,
+      required final SizeSet<EdgeInsets> onlyTop,
+      required final SizeSet<EdgeInsets> onlyBottom,
+      required final SizeSet<EdgeInsets> onlyLeft,
+      required final SizeSet<EdgeInsets> exceptLeft,
+      required final SizeSet<EdgeInsets> exceptRight,
+      required final SizeSet<EdgeInsets> exceptTop,
+      required final SizeSet<EdgeInsets> exceptBottom}) = _$_SpacingInsetsData;
 
   @override
-  SizeSet<EdgeInsets> get all => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get all;
   @override
-  SizeSet<EdgeInsets> get horizontal => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get horizontal;
   @override
-  SizeSet<EdgeInsets> get vertical => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get vertical;
   @override
-  SizeSet<EdgeInsets> get onlyRight => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get onlyRight;
   @override
-  SizeSet<EdgeInsets> get onlyTop => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get onlyTop;
   @override
-  SizeSet<EdgeInsets> get onlyBottom => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get onlyBottom;
   @override
-  SizeSet<EdgeInsets> get onlyLeft => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get onlyLeft;
   @override
-  SizeSet<EdgeInsets> get exceptLeft => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get exceptLeft;
   @override
-  SizeSet<EdgeInsets> get exceptRight => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get exceptRight;
   @override
-  SizeSet<EdgeInsets> get exceptTop => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get exceptTop;
   @override
-  SizeSet<EdgeInsets> get exceptBottom => throw _privateConstructorUsedError;
+  SizeSet<EdgeInsets> get exceptBottom;
   @override
   @JsonKey(ignore: true)
-  _$SpacingInsetsDataCopyWith<_SpacingInsetsData> get copyWith =>
+  _$$_SpacingInsetsDataCopyWith<_$_SpacingInsetsData> get copyWith =>
       throw _privateConstructorUsedError;
 }
-
-/// @nodoc
-class _$SizeSetTearOff {
-  const _$SizeSetTearOff();
-
-  _SizeSet<T> call<T>(
-      {required T extraSmall,
-      required T small,
-      required T semiSmall,
-      required T normal,
-      required T semiBig,
-      required T big,
-      required T extraBig}) {
-    return _SizeSet<T>(
-      extraSmall: extraSmall,
-      small: small,
-      semiSmall: semiSmall,
-      normal: normal,
-      semiBig: semiBig,
-      big: big,
-      extraBig: extraBig,
-    );
-  }
-}
-
-/// @nodoc
-const $SizeSet = _$SizeSetTearOff();
 
 /// @nodoc
 mixin _$SizeSet<T> {
@@ -684,7 +657,8 @@ mixin _$SizeSet<T> {
 /// @nodoc
 abstract class $SizeSetCopyWith<T, $Res> {
   factory $SizeSetCopyWith(SizeSet<T> value, $Res Function(SizeSet<T>) then) =
-      _$SizeSetCopyWithImpl<T, $Res>;
+      _$SizeSetCopyWithImpl<T, $Res, SizeSet<T>>;
+  @useResult
   $Res call(
       {T extraSmall,
       T small,
@@ -696,13 +670,16 @@ abstract class $SizeSetCopyWith<T, $Res> {
 }
 
 /// @nodoc
-class _$SizeSetCopyWithImpl<T, $Res> implements $SizeSetCopyWith<T, $Res> {
+class _$SizeSetCopyWithImpl<T, $Res, $Val extends SizeSet<T>>
+    implements $SizeSetCopyWith<T, $Res> {
   _$SizeSetCopyWithImpl(this._value, this._then);
 
-  final SizeSet<T> _value;
   // ignore: unused_field
-  final $Res Function(SizeSet<T>) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? extraSmall = freezed,
@@ -714,23 +691,46 @@ class _$SizeSetCopyWithImpl<T, $Res> implements $SizeSetCopyWith<T, $Res> {
     Object? extraBig = freezed,
   }) {
     return _then(_value.copyWith(
-      extraSmall: extraSmall == freezed ? _value.extraSmall : extraSmall as T,
-      small: small == freezed ? _value.small : small as T,
-      semiSmall: semiSmall == freezed ? _value.semiSmall : semiSmall as T,
-      normal: normal == freezed ? _value.normal : normal as T,
-      semiBig: semiBig == freezed ? _value.semiBig : semiBig as T,
-      big: big == freezed ? _value.big : big as T,
-      extraBig: extraBig == freezed ? _value.extraBig : extraBig as T,
-    ));
+      extraSmall: freezed == extraSmall
+          ? _value.extraSmall
+          : extraSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      small: freezed == small
+          ? _value.small
+          : small // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiSmall: freezed == semiSmall
+          ? _value.semiSmall
+          : semiSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      normal: freezed == normal
+          ? _value.normal
+          : normal // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiBig: freezed == semiBig
+          ? _value.semiBig
+          : semiBig // ignore: cast_nullable_to_non_nullable
+              as T,
+      big: freezed == big
+          ? _value.big
+          : big // ignore: cast_nullable_to_non_nullable
+              as T,
+      extraBig: freezed == extraBig
+          ? _value.extraBig
+          : extraBig // ignore: cast_nullable_to_non_nullable
+              as T,
+    ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$SizeSetCopyWith<T, $Res> implements $SizeSetCopyWith<T, $Res> {
-  factory _$SizeSetCopyWith(
-          _SizeSet<T> value, $Res Function(_SizeSet<T>) then) =
-      __$SizeSetCopyWithImpl<T, $Res>;
+abstract class _$$_SizeSetCopyWith<T, $Res>
+    implements $SizeSetCopyWith<T, $Res> {
+  factory _$$_SizeSetCopyWith(
+          _$_SizeSet<T> value, $Res Function(_$_SizeSet<T>) then) =
+      __$$_SizeSetCopyWithImpl<T, $Res>;
   @override
+  @useResult
   $Res call(
       {T extraSmall,
       T small,
@@ -742,14 +742,14 @@ abstract class _$SizeSetCopyWith<T, $Res> implements $SizeSetCopyWith<T, $Res> {
 }
 
 /// @nodoc
-class __$SizeSetCopyWithImpl<T, $Res> extends _$SizeSetCopyWithImpl<T, $Res>
-    implements _$SizeSetCopyWith<T, $Res> {
-  __$SizeSetCopyWithImpl(_SizeSet<T> _value, $Res Function(_SizeSet<T>) _then)
-      : super(_value, (v) => _then(v as _SizeSet<T>));
+class __$$_SizeSetCopyWithImpl<T, $Res>
+    extends _$SizeSetCopyWithImpl<T, $Res, _$_SizeSet<T>>
+    implements _$$_SizeSetCopyWith<T, $Res> {
+  __$$_SizeSetCopyWithImpl(
+      _$_SizeSet<T> _value, $Res Function(_$_SizeSet<T>) _then)
+      : super(_value, _then);
 
-  @override
-  _SizeSet<T> get _value => super._value as _SizeSet<T>;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? extraSmall = freezed,
@@ -760,19 +760,41 @@ class __$SizeSetCopyWithImpl<T, $Res> extends _$SizeSetCopyWithImpl<T, $Res>
     Object? big = freezed,
     Object? extraBig = freezed,
   }) {
-    return _then(_SizeSet<T>(
-      extraSmall: extraSmall == freezed ? _value.extraSmall : extraSmall as T,
-      small: small == freezed ? _value.small : small as T,
-      semiSmall: semiSmall == freezed ? _value.semiSmall : semiSmall as T,
-      normal: normal == freezed ? _value.normal : normal as T,
-      semiBig: semiBig == freezed ? _value.semiBig : semiBig as T,
-      big: big == freezed ? _value.big : big as T,
-      extraBig: extraBig == freezed ? _value.extraBig : extraBig as T,
+    return _then(_$_SizeSet<T>(
+      extraSmall: freezed == extraSmall
+          ? _value.extraSmall
+          : extraSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      small: freezed == small
+          ? _value.small
+          : small // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiSmall: freezed == semiSmall
+          ? _value.semiSmall
+          : semiSmall // ignore: cast_nullable_to_non_nullable
+              as T,
+      normal: freezed == normal
+          ? _value.normal
+          : normal // ignore: cast_nullable_to_non_nullable
+              as T,
+      semiBig: freezed == semiBig
+          ? _value.semiBig
+          : semiBig // ignore: cast_nullable_to_non_nullable
+              as T,
+      big: freezed == big
+          ? _value.big
+          : big // ignore: cast_nullable_to_non_nullable
+              as T,
+      extraBig: freezed == extraBig
+          ? _value.extraBig
+          : extraBig // ignore: cast_nullable_to_non_nullable
+              as T,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_SizeSet<T> implements _SizeSet<T> {
   const _$_SizeSet(
       {required this.extraSmall,
@@ -806,70 +828,62 @@ class _$_SizeSet<T> implements _SizeSet<T> {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SizeSet<T> &&
-            (identical(other.extraSmall, extraSmall) ||
-                const DeepCollectionEquality()
-                    .equals(other.extraSmall, extraSmall)) &&
-            (identical(other.small, small) ||
-                const DeepCollectionEquality().equals(other.small, small)) &&
-            (identical(other.semiSmall, semiSmall) ||
-                const DeepCollectionEquality()
-                    .equals(other.semiSmall, semiSmall)) &&
-            (identical(other.normal, normal) ||
-                const DeepCollectionEquality().equals(other.normal, normal)) &&
-            (identical(other.semiBig, semiBig) ||
-                const DeepCollectionEquality()
-                    .equals(other.semiBig, semiBig)) &&
-            (identical(other.big, big) ||
-                const DeepCollectionEquality().equals(other.big, big)) &&
-            (identical(other.extraBig, extraBig) ||
-                const DeepCollectionEquality()
-                    .equals(other.extraBig, extraBig)));
+        (other.runtimeType == runtimeType &&
+            other is _$_SizeSet<T> &&
+            const DeepCollectionEquality()
+                .equals(other.extraSmall, extraSmall) &&
+            const DeepCollectionEquality().equals(other.small, small) &&
+            const DeepCollectionEquality().equals(other.semiSmall, semiSmall) &&
+            const DeepCollectionEquality().equals(other.normal, normal) &&
+            const DeepCollectionEquality().equals(other.semiBig, semiBig) &&
+            const DeepCollectionEquality().equals(other.big, big) &&
+            const DeepCollectionEquality().equals(other.extraBig, extraBig));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(extraSmall) ^
-      const DeepCollectionEquality().hash(small) ^
-      const DeepCollectionEquality().hash(semiSmall) ^
-      const DeepCollectionEquality().hash(normal) ^
-      const DeepCollectionEquality().hash(semiBig) ^
-      const DeepCollectionEquality().hash(big) ^
-      const DeepCollectionEquality().hash(extraBig);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(extraSmall),
+      const DeepCollectionEquality().hash(small),
+      const DeepCollectionEquality().hash(semiSmall),
+      const DeepCollectionEquality().hash(normal),
+      const DeepCollectionEquality().hash(semiBig),
+      const DeepCollectionEquality().hash(big),
+      const DeepCollectionEquality().hash(extraBig));
 
   @JsonKey(ignore: true)
   @override
-  _$SizeSetCopyWith<T, _SizeSet<T>> get copyWith =>
-      __$SizeSetCopyWithImpl<T, _SizeSet<T>>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$_SizeSetCopyWith<T, _$_SizeSet<T>> get copyWith =>
+      __$$_SizeSetCopyWithImpl<T, _$_SizeSet<T>>(this, _$identity);
 }
 
 abstract class _SizeSet<T> implements SizeSet<T> {
   const factory _SizeSet(
-      {required T extraSmall,
-      required T small,
-      required T semiSmall,
-      required T normal,
-      required T semiBig,
-      required T big,
-      required T extraBig}) = _$_SizeSet<T>;
+      {required final T extraSmall,
+      required final T small,
+      required final T semiSmall,
+      required final T normal,
+      required final T semiBig,
+      required final T big,
+      required final T extraBig}) = _$_SizeSet<T>;
 
   @override
-  T get extraSmall => throw _privateConstructorUsedError;
+  T get extraSmall;
   @override
-  T get small => throw _privateConstructorUsedError;
+  T get small;
   @override
-  T get semiSmall => throw _privateConstructorUsedError;
+  T get semiSmall;
   @override
-  T get normal => throw _privateConstructorUsedError;
+  T get normal;
   @override
-  T get semiBig => throw _privateConstructorUsedError;
+  T get semiBig;
   @override
-  T get big => throw _privateConstructorUsedError;
+  T get big;
   @override
-  T get extraBig => throw _privateConstructorUsedError;
+  T get extraBig;
   @override
   @JsonKey(ignore: true)
-  _$SizeSetCopyWith<T, _SizeSet<T>> get copyWith =>
+  _$$_SizeSetCopyWith<T, _$_SizeSet<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }
