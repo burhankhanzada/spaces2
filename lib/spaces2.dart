@@ -1,4 +1,4 @@
-library spaces;
+library spaces2;
 
 export 'src/space.dart';
 export 'src/spacing.dart';
