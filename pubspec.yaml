@@ -3,6 +3,12 @@ description: Defining global spacing constants for building consistent and respo
 version: 1.0.0
 homepage: https://github.com/burhankhanzada/spaces2
 
+topics:
+  - gap
+  - flexible
+  - row
+  - column
+
 environment:
   sdk: ">=3.0.3 <4.0.0"
 
