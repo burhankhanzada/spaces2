@@ -1,3 +1,7 @@
+## [1.0.0] - 2023/06/23
+
+* Updated dependecies.
+
 ## [0.5.0] - 2021/03/04
 
 * Migration to null-safety.
