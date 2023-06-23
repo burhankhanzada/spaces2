@@ -30,9 +30,7 @@ class Spacing extends StatelessWidget {
     Key? key,
     required this.child,
     required SpacingData data,
-  })   : assert(data != null),
-        assert(child != null),
-        dataBuilder = ((BuildContext context) => data),
+  })  : dataBuilder = ((BuildContext context) => data),
         super(key: key);
 
   /// The data from the closest [Spacing] instance that encloses the given
