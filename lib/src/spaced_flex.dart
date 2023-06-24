@@ -86,7 +86,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// The [spaceBetween] will add this amount of space between all children.
   const SpacedFlex({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -116,7 +116,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.extraSmall({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -146,7 +146,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.small({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -176,7 +176,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.semiSmall({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -206,7 +206,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.normal({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -236,7 +236,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.semiBig({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -266,7 +266,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.big({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,
@@ -296,7 +296,7 @@ class SpacedFlex extends StatelessWidget {
   ///
   /// A [padding] can be defined to add space around children.
   const SpacedFlex.extraBig({
-    Key? key,
+    super.key,
     required this.direction,
     this.clipBehavior = Clip.hardEdge,
     this.mainAxisAlignment = MainAxisAlignment.start,

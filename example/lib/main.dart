@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spaces/spaces.dart';
+import 'package:spaces2/spaces2.dart';
 
 void main() {
   runApp(MyApp());
